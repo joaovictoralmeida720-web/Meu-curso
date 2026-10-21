@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>APi</title>
+
+</head>
+
+<body>
+
+    <script>
+        fetch("https://viacep.com.br/ws/27540220/json/")
+        .then(r => r.json())
+        .then(d => {
+
+            console.log(d.logradouro);
+            console.log(d.localidade);
+            console.log(d.uf);
+
+        })
+    </script>
+
+</body>
+
+</html>
